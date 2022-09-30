@@ -1,0 +1,555 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/*................ my own code starts.................. */
+* {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+main {
+    padding-top: 100px;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 15%;
+    position: fixed;
+
+}
+
+header .header-logo {
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 10px;
+    list-style: none;
+    text-transform: uppercase;
+
+}
+
+
+header nav ul li a {
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #111;
+
+}
+
+.headder {
+    display: none;
+}
+
+
+/*.............Desktop responsiveness..........*/
+
+@media only screen and (min-width:1000px) {
+    header .header-logo {
+
+        margin: 31px;
+        text-align: left;
+        line-height: 38px;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }
+
+    header nav ul {
+        margin: 0 auto;
+        float: left;
+
+    }
+
+    header nav ul li {
+        line-height: 80px;
+    }
+
+    .headder {
+        display: block;
+        margin: 28px 60px 0;
+        float: right;
+        border: 1px solid #111;
+        line-height: 30px;
+        padding: 0 15px 0 15px;
+        font-family: catamaran;
+        font-size: 14px;
+        color: #111;
+        text-transform: uppercase;
+    }
+
+
+}
+
+
+/*................INDEX BODY.......................*/
+
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('img/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.center-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2 {
+    font-family: Catamaran;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 90px;
+
+}
+
+.index-banner h1 {
+    font-family: Cormorant Garamond;
+    font-size: 28px;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    font-style: italic;
+    line-height: 40px;
+
+}
+
+.index-links div {
+    background-color: #f2f2f2;
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+}
+
+.index-links div h3 {
+    font-family: Catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 100px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width:1000px) {
+    .wrapper {
+        display: block;
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .index-banner {
+        width: 100%;
+        height: 450px;
+
+    }
+
+    .index-banner h1 {
+        display: block;
+        width: 620px;
+        margin: 0 auto;
+        line-height: 60px;
+        padding-top: 20px;
+
+    }
+
+    .index-links {
+        overflow: hidden;
+        padding-left: 30px;
+    }
+
+    .index-links div {
+        background-color: #f2f2f2;
+        margin: 20px 10px 0;
+        width: calc(100% - 32px);
+        height: 100px;
+        float: left;
+    }
+
+
+    .index-box-square {
+        width: calc(25% - 32px) !important;
+        padding-bottom: 50px;
+    }
+
+    .index-box-rec {
+        width: calc(50% - 32px) !important;
+        padding-bottom: 50px;
+    }
+
+
+    .index-links div h3 {
+        line-height: 140px;
+
+    }
+
+}
+
+/*Footer..................*/
+
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+
+
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+
+
+
+
+}
+
+footer ul li a {
+    font-family: Catamaran;
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.footer-main2 {
+    display: none;
+}
+
+.footer-sm {
+    width: 60px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* cases style */
+
+.cases-links {
+    overflow: hidden;
+    margin-bottom: -10px;
+}
+
+.cases-links {
+    font-family: Catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.cases-links h3 {
+    font-family: Catamaran;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 180px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cases-links div {
+    float: left;
+    width: 180px;
+    height: 180px;
+    background-color: #e3e3e3;
+    margin: 10px;
+}
+
+.con-box {
+    background-color: #e3e3e3;
+    height: 150px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+
+.con-box h2,
+p {
+    margin: 0 auto;
+    font-family: Catamaran;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.con-box h2 {
+    font-size: 25px;
+    padding: 20px;
+    padding-top: 35px;
+}
+
+
+/* bella styles */
+
+.bella1 h2 {
+    font-family: Catamaran;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bella1 video {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 255px;
+}
+
+.bella1 h3 {
+    font-family: Catamaran;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
+article div {
+    float: left;
+    margin-top: 10px;
+    width: 253px;
+    font-weight: 600;
+}
+
+.clear {
+    clear: both;
+}
+
+.second {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media only screen and (min-width:1000px) {
+    .footer-main2 {
+        display: block;
+
+    }
+
+    footer ul {
+        padding-right: 50px;
+    }
+
+    footer ul li span {
+        font-family: Catamaran;
+        font-size: 20px;
+        color: #fff;
+        line-height: 40px;
+        text-transform: uppercase;
+
+    }
+
+
+}
